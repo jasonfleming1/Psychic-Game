@@ -1,0 +1,43 @@
+/* global styles */
+
+    body {
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+        line-height: 36px;
+        background: url(/../Psychic-Game/assets/images/blurry.gif) !important;
+    }
+
+/* jumbotron styles */
+
+
+    .display-1 {
+        font-family: 'Press Start 2P', cursive;
+    }
+    .lead {
+        text-transform: uppercase;
+    }
+
+/* gameplay space */
+
+    h2 {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+
+    .card-header {
+        margin-bottom: 20px;
+        background: black;
+        color: white;
+    }
+
+    .card-text {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    #guesses,
+    #chances {
+        font-size: 40px;
+        color: black;
+    }

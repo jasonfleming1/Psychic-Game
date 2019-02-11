@@ -8,7 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+
 </head>
 
 <body>
@@ -19,51 +21,47 @@
 
         <div class="jumbotron">
             <h1 class="display-1">Psychic Game </h1>
-            <p class="lead">try to guess what letter we're thinking of</p>
+            <p class="lead">try to guess the letter i'm thinking of thinking of</p>
         </div>
 
         <!--End Game Header-->
 
+        <br>
+
         <!--start Game Play Space-->
 
         <div class="row">
-            <div class="col-md-12">
-                <h1 class="card-title">YOUR GUESSES SO FAR</h1>
+            <div class="col-md-6 justify-content-center">
+                <h2 class="card-header">remaining guesses</h2>
+                <p class="card-text"> <span id="chances"></span></p>
+            </div>
+            <div class="col-md-6 justify-content-center">
+                <h2 class="card-header">guesses so far</h2>
                 <p class="card-text"> <span id="guesses"></span></p>
             </div>
         </div>
         <br>
+        <br>
+        <br>
         <div class="row">
-            <div class="col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Remaining Guesses</h5>
-                        <p class="card-text"> <span id="chances"></span></p>
-                    </div>
+            <div class="col-md-6">
+                <div class="card-body">
+                    <h2 class="card-header">wins</h2>
+                    <p class="card-text"> <span id="countWins"></span></p>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">WINS</h5>
-                        <p class="card-text"> <span id="countWins"></span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card" style="width: 24rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">LOSSES</h5>
-                        <p class="card-text"> <span id="countLosses"></span></p>
-                    </div>
+            <div class="col-md-6" id="gutter">
+                <div class="card-body">
+                    <h2 class="card-header">losses</h2>
+                    <p class="card-text"> <span id="countLosses"></span></p>
                 </div>
             </div>
         </div>
     </div>
 
-        <!--Start JS file reference-->
-        <script src="assets/javascript/game.js"></script>
-        <!--end JS file reference-->
+    <!--Start JS file reference-->
+    <script src="assets/javascript/game.js"></script>
+    <!--end JS file reference-->
 
 </body>
 
